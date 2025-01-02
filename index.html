@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Comparison Visualization</title>
+
+    <link rel="stylesheet" href="style.css" />
+    
+
+</head>
+<body>
+    <div class="main-container">
+    <div class="title-bar">
+        Sorting Comparison Visualization
+    </div>
+    
+
+
+    <div class="algorithm-selection-left">
+        <button onclick="selectAlgorithm('bubble')">Bubble Sort</button>
+        <button onclick="selectAlgorithm('insertion')">Insertion Sort</button>
+        <button onclick="selectAlgorithm('merge')">Merge Sort</button>
+        <button onclick="selectAlgorithm('heap')">Heap Sort</button>
+    </div>
+    
+  
+    <div class="algorithm-selection-right">
+        
+        <button onclick="selectAlgorithm('selection')">Selection Sort</button>
+        <button onclick="selectAlgorithm('quick')">Quick Sort</button>
+        <button onclick="selectAlgorithm('quickMedian')">Quick Sort (Median of Three)</button>
+        <button onclick="compareSorts()">Compare All Sorts</button>
+    </div>
+    
+  
+    <div class="canvas-container">
+        <div id="bubbleSortContainer">
+            <h3>Bubble Sort</h3>
+            <canvas id="bs" width="600" height="300"></canvas>
+            <div id="runtime1" class="runtime">Runtime: -- ms</div>
+        </div>
+        
+        <div id="insertionSortContainer">
+            <h3>Insertion Sort</h3>
+            <canvas id="ins" width="600" height="300"></canvas>
+            <div id="runtime2" class="runtime">Runtime: -- ms</div>
+        </div>
+
+        <div id="mergeSortContainer">
+            <h3>Merge Sort</h3>
+            <canvas id="mg" width="600" height="300"></canvas>
+            <div id="runtime3" class="runtime">Runtime: -- ms</div>
+        </div>
+
+        <div id="heapSortContainer">
+            <h3>Heap Sort</h3>
+            <canvas id="hp" width="600" height="300"></canvas>
+            <div id="runtime4" class="runtime">Runtime: -- ms</div>
+        </div>
+
+        <div id="selectionSortContainer">
+            <h3>Selection Sort</h3>
+            <canvas id="sl" width="600" height="300"></canvas>
+            <div id="runtime5" class="runtime">Runtime: -- ms</div>
+        </div>
+
+        <div id="quickSortContainer">
+            <h3>Quick Sort</h3>
+            <canvas id="qk" width="600" height="300"></canvas>
+            <div id="runtime6" class="runtime">Runtime: -- ms</div>
+        </div>
+
+        <div id="quickMedianSortContainer">
+            <h3>Quick Sort (Median of Three)</h3>
+            <canvas id="qk3" width="600" height="300"></canvas>
+            <div id="runtime7" class="runtime">Runtime: -- ms</div>
+        </div>
+    </div>
+
+ 
+    <div class="controls">
+        <button onclick="runSelectedSort()">Run Selected Sort</button>
+        
+        <label for="dataSize">Data Size:</label>
+<input type="number" id="dataSize" value="50" min="1">
+<button onclick="generateNewData()">New Data</button>
+    </div>
+
+    <script src="sortingAlgorithms.js"></script>
+    <script src="Bubble_sort.js"></script>
+    <script src="Heap_sort.js"></script>
+    <script src="Selection_sort.js"></script>
+    <script src="Quick_sort.js"></script>
+    <script src="Quick_sort3.js"></script>
+    <script src="Merge_sort.js"></script>
+    <script src="Insertion_sort.js"></script>
+
+
+</div>
+</body>
+</html>

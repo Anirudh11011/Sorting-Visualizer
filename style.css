@@ -1,0 +1,111 @@
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: Arial, sans-serif;
+margin-top: 20px;
+
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed; /
+    
+     
+   
+    
+}
+.algorithm-selection, .canvas-container, .controls {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 270px;
+}
+.canvas-container {
+    display: none;
+    flex-wrap: wrap;
+   
+}
+canvas {
+    border: 1px solid #ccc;
+    margin-left: 200px;
+}
+button {
+    padding: 20px 10px 20px 10px;
+    text-align: center; 
+    cursor: pointer;
+    margin: 5px;
+}
+.runtime {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+    .algorithm-selection-left,
+    .algorithm-selection-right {
+        position: absolute;
+        top: 20%;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .algorithm-selection-left {
+       
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: hwb(192 7% 63%);
+        overflow-x: hidden;
+        padding-top: 100px;
+        
+    }
+
+    .algorithm-selection-right {
+        
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: hwb(192 7% 63%);
+        overflow-x: hidden;
+        padding-top: 100px;
+    }
+
+    .algorithm-selection button {
+        margin: 5px 0;
+        padding: 10px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+   
+    .canvas-container {
+        margin: 0 auto;
+        padding-top: 50px;
+        text-align: center;
+        width: 100%;
+    }
+
+            .title-bar {
+            width: 100%;
+            padding: 15px 0;
+            background-color: hwb(192 7% 63%); 
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10; 
+        }
+
+        .main-container {
+            margin-top: 60px;
+        }
